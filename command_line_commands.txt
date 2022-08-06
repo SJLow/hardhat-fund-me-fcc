@@ -1,0 +1,12 @@
+yarn add --dev hardhat-deploy
+yarn add --dev @chainlink/contracts
+yarn add --dev @nomiclabs/hardhat-ethers@npm:hardhat-deploy-ethers ethers
+yarn add --dev @nomiclabs/hardhat-waffle
+
+yarn hardhat node
+yarn hardhat run scripts/withdraw.js network --rinkeby
+
+git init -b main
+git status
+git add .
+git commit -m "initial commit"
